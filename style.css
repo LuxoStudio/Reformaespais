@@ -4,69 +4,166 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
+    color:white;
     background:#F8F6F2;
-    color:#222;
-}
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 8%;
-    background:white;
-    position:sticky;
-    top:0;
-    box-shadow:0 2px 12px rgba(0,0,0,.08);
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#5D7A52;
-}
-
-nav a{
-    text-decoration:none;
-    margin-left:25px;
-    color:#333;
-    font-weight:600;
 }
 
 .hero{
-    min-height:90vh;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.menu{
+
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+
+    justify-content:space-between;
+
     align-items:center;
-    text-align:center;
-    padding:40px;
+
+    padding:30px 8%;
+
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+}
+
+.logo span{
+
+    color:#8DAA69;
+
+}
+
+.menu ul{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.hero-contenido{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    height:80vh;
+
+    max-width:700px;
+
+    margin-left:8%;
+
 }
 
 .hero h1{
-    font-size:52px;
-    max-width:900px;
+
+    font-size:64px;
+
+    line-height:1.1;
+
     margin-bottom:25px;
+
 }
 
 .hero p{
+
     font-size:22px;
-    max-width:700px;
+
+    line-height:1.6;
+
     margin-bottom:40px;
-    color:#666;
+
 }
 
-.boton{
-    background:#5D7A52;
+.botones{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-principal{
+
+    background:#7E9565;
+
     color:white;
-    text-decoration:none;
-    padding:18px 38px;
+
+    padding:18px 36px;
+
     border-radius:50px;
-    font-size:18px;
-    transition:.3s;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
 }
 
-.boton:hover{
-    background:#465C3F;
+.btn-secundario{
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:18px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+section{
+
+    color:#222;
+
+    background:white;
+
+    padding:100px 8%;
+
+}
+
+section:nth-child(even){
+
+    background:#F8F6F2;
+
 }
