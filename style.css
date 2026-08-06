@@ -25,15 +25,43 @@ body{
 }
 
 .menu{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
-    padding:30px 8%;
+
+    padding:25px 8%;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+
+    transition:.35s;
+
+}
 }
 
 .logo{
-    font-size:34px;
-    font-weight:bold;
+
+    font-size:40px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
 }
 
 .logo span{
@@ -47,14 +75,26 @@ body{
 }
 
 .menu a{
+   .menu a{
+
     color:white;
+
     text-decoration:none;
-    font-weight:600;
+
+    font-weight:700;
+
+    font-size:18px;
+
     transition:.3s;
+
+}
 }
 
 .menu a:hover{
-    color:#89a36a;
+
+    color:#9DB57C;
+
+}
 }
 
 .hero-contenido{
@@ -84,30 +124,59 @@ body{
 }
 
 .btn-principal{
-    background:#7d9562;
-    color:#fff;
+
+    background:#7E9565;
+
+    color:white;
+
+    padding:20px 40px;
+
+    border-radius:60px;
+
     text-decoration:none;
-    padding:18px 35px;
-    border-radius:50px;
+
     font-weight:bold;
+
+    transition:.35s;
+
+}
 }
 
 .btn-principal:hover{
-    background:#6d8455;
+
+    transform:translateY(-3px);
+
+    background:#90A872;
+
+}
 }
 
 .btn-secundario{
-    border:2px solid #fff;
-    color:#fff;
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:20px 40px;
+
+    border-radius:60px;
+
     text-decoration:none;
-    padding:18px 35px;
-    border-radius:50px;
+
     font-weight:bold;
+
+    transition:.35s;
+
+}
 }
 
 .btn-secundario:hover{
+
     background:white;
+
     color:#222;
+
+}
 }
 
 section{
