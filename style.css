@@ -230,5 +230,163 @@ h2{
     .btn-secundario{
         text-align:center;
     }
+/*==========================
+        SERVICIOS
+===========================*/
 
+.servicios{
+
+    background:#f8f6f2;
+
+    text-align:center;
+
+}
+
+.servicios h2{
+
+    font-size:48px;
+
+    margin-bottom:60px;
+
+}
+
+.grid-servicios{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.icono{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    font-size:28px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:17px;
+
+}
+
+/*==========================
+        MÓVIL
+===========================*/
+
+@media (max-width:900px){
+
+    .menu{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    .menu ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .hero-contenido{
+
+        margin:0 30px;
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .hero h1{
+
+        font-size:52px;
+
+    }
+
+    .hero p{
+
+        font-size:22px;
+
+    }
+
+    .botones{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .btn-principal,
+
+    .btn-secundario{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .grid-servicios{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .servicios h2{
+
+        font-size:38px;
+
+    }
+
+}
 }
